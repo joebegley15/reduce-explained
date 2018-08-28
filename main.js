@@ -1,7 +1,8 @@
-var items = {"apple" : {"qty": 2, "price":2.5}, 
-			"banana" : {"qty": 8, "price":1.25},
-			"orange" : "qty": 3, "price":1}
+const arr = [1,2,3,5,4]
 
-// Total using reduce
-
-// Most expensive using reduce
+// Sum using reduce
+console.log(arr.reduce((acc,elem) => acc + elem));
+// Product using reduce
+console.log(arr.reduce((acc,elem) => acc * elem));
+// Greatest using reduce
+console.log(arr.reduce((acc,elem) => elem > acc ? elem : acc));
